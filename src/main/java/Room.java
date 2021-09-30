@@ -7,6 +7,7 @@ public abstract class Room {
 
         public Room(RoomType roomType) {
                 this.roomType = roomType;
+                this.guests = new ArrayList<>();
         }
 
         public RoomType getRoomType() {
@@ -19,6 +20,14 @@ public abstract class Room {
 
         public int getCapacityFromEnum(){
                 return this.roomType.getCapacity();
+        }
+
+        public void addGuestToRoom(Guest guest){
+                this.guests.add(guest);
+        }
+
+        public int countGuestsInRoom(){
+                return this.guests.size();
         }
 }
 

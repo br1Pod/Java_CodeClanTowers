@@ -34,7 +34,6 @@ public class Hotel {
         this.conferenceRooms = conferenceRooms;
     }
 
-
     public void addBedroom(BedRoom bedRoom){
         this.bedrooms.add(bedRoom);
     }
@@ -42,4 +41,10 @@ public class Hotel {
     public void addConferenceRoom(ConferenceRoom conferenceRoom){
         this.conferenceRooms.add(conferenceRoom);
     }
+
+//    add guests to room
+
+//    public void addGuestsToBedRoom(Guest guest, BedRoom bedRroom){
+//        room.addGuestToRoom(guest);
+//    }
 }
