@@ -4,7 +4,10 @@ public enum RoomType {
     DOUBLE(2),
     TWIN(2),
     FAMILY(4),
-    PRESIDENTIAL(8);
+    PRESIDENTIAL(8),
+    MEETING(12),
+    AV(30),
+    WEDDING(80);
 
     private final int capacity;
 
